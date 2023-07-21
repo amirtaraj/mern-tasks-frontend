@@ -58,6 +58,7 @@ const DashHeader = () => {
 
     let newUserButton = null
     if (USERS_REGEX.test(pathname)) {
+        if (isAdmin) {
         newUserButton = (
             <button
                 className="icon-button"
@@ -68,6 +69,7 @@ const DashHeader = () => {
             </button>
         )
     }
+}
 
     let userButton = null
     if (isManager || isAdmin) {
