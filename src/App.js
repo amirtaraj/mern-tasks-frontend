@@ -15,7 +15,7 @@ import PersistLogin from './features/auth/PersistLogin'
 import useTitle from './hooks/useTitle';
 
 function App() {
-  useTitle('Dan D. Repairs')
+  useTitle('Amirt Task App')
 
   return (
     <Routes>
