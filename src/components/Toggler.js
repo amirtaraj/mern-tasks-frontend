@@ -17,9 +17,8 @@ const GlobalStyle = createGlobalStyle`
 
 const Button = styled.button`
   background: ${({ theme }) => theme.background};
-  border: 2px solid ${({ theme }) => theme.toggleBorder};
+ 
   color: ${({ theme }) => theme.text};
-  padding: 0.35rem;
   position: fixed;
   bottom: 40px;
   right: 10px;

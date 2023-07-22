@@ -190,11 +190,12 @@ tr {
 
 .table {
   font-size: 1rem;
-  width: 100%;
+  width: 95%;
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   color: var(--TABLE-COLOR);
   gap: 0.1em;
+  border: 1px solid rgb(88, 88, 88); 
 }
 
 .table__button {
@@ -213,8 +214,8 @@ tr {
 .table__cell {
   background-color: var(--TABLE-BGCOLOR);
   text-align: left;
-  border: 1px solid var(--TABLE-COLOR);
   padding: 0.5em;
+  border: 1px solid rgb(88, 88, 88); 
 }
 
 .table__cell:last-child {
