@@ -1,4 +1,6 @@
 import { Link } from 'react-router-dom'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUser } from "@fortawesome/free-solid-svg-icons";
 
 const Public = () => {
     const content = (
@@ -8,7 +10,14 @@ const Public = () => {
             </header>
             <main className="public__main">
             <br />
-                <Link to="/login">User Login</Link>
+            <Link to="/login">
+          <FontAwesomeIcon icon={faUser} style={{ marginRight: '0.5rem' }} />
+          User Login
+        </Link>
+                <br />
+                <br />
+                <p>Stay Organized and Efficient with Task Hub!</p>
+                <br />
                 <br />
                </main>
             <footer>

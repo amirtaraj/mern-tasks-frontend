@@ -26,7 +26,7 @@ const DashFooter = () => {
     }
 
     const content = (
-        <footer className="dash-footer">
+        <footer className="dash-footer" style={{ backgroundColor: "#0F172A", color: "#fff" }}>
             {goHomeButton}
             <p>Current User: {username}</p>
             <p>Status: {status}</p>

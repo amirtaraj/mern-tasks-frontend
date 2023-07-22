@@ -130,7 +130,7 @@ const DashHeader = () => {
         <>
             <p className={errClass}>{error?.data?.message}</p>
 
-            <header className="dash-header">
+            <header className="dash-header" style={{ backgroundColor: "#0F172A", color: "#fff" }}>
                 <div className={`dash-header__container ${dashClass}`}>
                     <Link to="/dash">
                         <h1 className="dash-header__title">My Tasks</h1>
