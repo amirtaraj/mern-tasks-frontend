@@ -1,4 +1,5 @@
 import { Routes, Route } from 'react-router-dom'
+import React, { useEffect } from "react";
 import Layout from './components/Layout'
 import Public from './components/Public'
 import Login from './features/auth/Login';
@@ -13,11 +14,28 @@ import NewNote from './features/notes/NewNote'
 import Prefetch from './features/auth/Prefetch'
 import PersistLogin from './features/auth/PersistLogin'
 import useTitle from './hooks/useTitle';
+import  {useDarkMode} from "./components/useDarkMode"
+import { lightTheme, darkTheme } from "./components/Themes"
+import {ThemeProvider} from "styled-components";
+import { GlobalStyles } from "./components/Globalstyle";
+import Toggle from "./components/Toggler"
 
 function App() {
   useTitle('Amirt Task App')
+  const [theme, themeToggler, mountedComponent] = useDarkMode();
+  const themeMode = theme === 'light' ? lightTheme : darkTheme;
 
+  useEffect(() => {
+    const timer = setTimeout(() => {
+    }, 1000);
+    return () => clearTimeout(timer);
+  }, []);
+  if(!mountedComponent) return <div/>
   return (
+    
+    <ThemeProvider theme={themeMode}>
+      <GlobalStyles />
+      <Toggle theme={theme} toggleTheme={themeToggler} />
     <Routes>
       <Route path="/" element={<Layout />}>
         {/* public routes */}
@@ -52,7 +70,9 @@ function App() {
         </Route>{/* End Protected Routes */}
 
       </Route>
+      
     </Routes >
+    </ThemeProvider>
   );
 }
 

@@ -10,18 +10,13 @@
 
 :root {
   /* COLORS */
-  --BGCOLOR: #0F172A;
-  --BORDER-COLOR: #FFF;
-  --COLOR: #FFF;
+  --BORDER-COLOR: #b1b1b1;
   --ERROR: firebrick;
-  --INACTIVE: lightgray;
-  --LINK-COLOR: whitesmoke;
-  --LINK-HOVER: rgba(245, 245, 245, 0.9);
+  --INACTIVE: rgb(148, 148, 148);
+  --LINK-HOVER: rgba(23, 81, 238, 0.9);
   --NOTE-BGCOLOR: hsla(240, 64%, 27%, 0.65);
   --STATUS-COMPLETE: limegreen;
   --STATUS-OPEN: firebrick;
-  --TABLE-BGCOLOR: #FFF;
-  --TABLE-COLOR: #000;
   --INPUT-INVALID: #F00;
 }
 
@@ -66,17 +61,13 @@
 /* || GENERAL STYLES */
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Nunito', sans-serif;
   min-height: 100vh;
   background-color: var(--BGCOLOR);
   color: var(--COLOR);
   background-size: cover;
   background-position: top right;
   background-blend-mode: multiply;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
 }
 
 input,
@@ -374,6 +365,7 @@ tr {
   .note__username {
     display: block
   }
+  
 
   .form__action-buttons {
     position: static;
