@@ -10,7 +10,7 @@ const Public = () => {
             </header>
             <main className="public__main">
             <br />
-            <Link to="/login">
+            <Link to="/login" id="userLogin">
           <FontAwesomeIcon icon={faUser} style={{ marginRight: '0.5rem' }} />
           User Login
         </Link>
@@ -21,7 +21,7 @@ const Public = () => {
                 <br />
                </main>
             <footer>
-                <a href="https://www.amirtaraj.com">Contact Us</a>
+                <a href="https://www.amirtaraj.com" id="contactUs">Contact Us</a>
             </footer>
         </section>
 

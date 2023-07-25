@@ -91,7 +91,7 @@ const Login = () => {
                         value={password}
                         required
                     />
-                    <button className="form__submit-button">Sign In</button>
+                    <button className="form__submit-button" id="signIn">Sign In</button>
 
 
                     <label htmlFor="persist" className="form__persist">
@@ -107,7 +107,7 @@ const Login = () => {
                 </form>
             </main>
             <footer>
-                <Link to="/">Back to Home</Link>
+                <Link to="/" id="backToHome">Back to Home</Link>
             </footer>
         </section>
     )

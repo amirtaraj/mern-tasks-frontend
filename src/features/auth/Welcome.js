@@ -18,13 +18,13 @@ const Welcome = () => {
 
             <h1>Welcome {username}!</h1>
 
-            <p><Link to="/dash/notes">View my Task</Link></p>
+            <p><Link to="/dash/notes" id="viewMyTask">View my Task</Link></p>
 
-            <p><Link to="/dash/notes/new">Add New Task</Link></p>
+            <p><Link to="/dash/notes/new" id="addNewTask">Add New Task</Link></p>
 
-            {(isManager || isAdmin) && <p><Link to="/dash/users">View User Settings</Link></p>}
+            {(isManager || isAdmin) && <p><Link to="/dash/users" id="viewUserSettings">View User Settings</Link></p>}
 
-            {(isAdmin) && <p><Link to="/dash/users/new">Add New User</Link></p>}
+            {(isAdmin) && <p><Link to="/dash/users/new" id="addNewUser">Add New User</Link></p>}
 
         </section>
     )
