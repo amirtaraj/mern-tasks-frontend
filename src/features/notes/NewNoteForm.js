@@ -63,6 +63,7 @@ const NewNoteForm = ({ users }) => {
                     <h2>New Task</h2>
                     <div className="form__action-buttons">
                         <button
+                            id="saveButton"
                             className="icon-button"
                             title="Save"
                             disabled={!canSave}

@@ -99,6 +99,7 @@ const EditNoteForm = ({ note, users }) => {
                     <h2>Edit Note #{note.ticket}</h2>
                     <div className="form__action-buttons">
                         <button
+                            id="saveButton"
                             className="icon-button"
                             title="Save"
                             onClick={onSaveNoteClicked}

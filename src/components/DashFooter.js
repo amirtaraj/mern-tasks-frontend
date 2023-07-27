@@ -16,6 +16,7 @@ const DashFooter = () => {
     if (pathname !== '/dash') {
         goHomeButton = (
             <button
+                id="home"
                 className="dash-footer__button icon-button"
                 title="Home"
                 onClick={onGoHomeClicked}
